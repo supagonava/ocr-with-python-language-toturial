@@ -6,7 +6,7 @@ You response will be in json format that fit for python json loads
 </DocumentDescriptionOptional>
 
 Value Conditions:
-- Exclude the following characters from all values: `"`, `'`, `/`, and `\`.
+- Exclude the following characters from all values: `"`, `'` will replace with blank space.
 - Ensure all data is included; do not omit any for the sake of brevity.
 - Refrain from adding comments to the JSON text response.
 - For numbers, avoid using comma-separated values. For example, convert `100,000.00` to `100000.00`.
