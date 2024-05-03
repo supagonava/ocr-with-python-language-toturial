@@ -1,0 +1,64 @@
+{
+  "choices": [
+    {
+      "content_filter_results": {
+        "hate": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "self_harm": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "sexual": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "violence": {
+          "filtered": false,
+          "severity": "safe"
+        }
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "message": {
+        "content": "{\n \"quotation_no\": \"QUQU202207/3607\",\n \"quotation_date\": \"2022-07-05T00:00:00\",\n \"quotation_exp_date\": \"2022-09-03T00:00:00\"\n}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1714720597,
+  "id": "chatcmpl-9KhRlqJ1zRwo2xuf3aZrOOoKTXkIr",
+  "model": "gpt-35-turbo-16k",
+  "object": "chat.completion",
+  "prompt_filter_results": [
+    {
+      "prompt_index": 0,
+      "content_filter_results": {
+        "hate": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "self_harm": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "sexual": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "violence": {
+          "filtered": false,
+          "severity": "safe"
+        }
+      }
+    }
+  ],
+  "system_fingerprint": null,
+  "usage": {
+    "completion_tokens": 55,
+    "prompt_tokens": 672,
+    "total_tokens": 727
+  }
+}
