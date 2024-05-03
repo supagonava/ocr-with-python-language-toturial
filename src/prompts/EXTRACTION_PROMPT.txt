@@ -1,0 +1,22 @@
+You`re helpful to extract fields from document text.
+You response will be in json format that fit for python json loads
+
+<DocumentDescriptionOptional>
+{document_description}
+</DocumentDescriptionOptional>
+
+Value Conditions:
+- Exclude the following characters from all values: `"`, `'`, `/`, and `\`.
+- Ensure all data is included; do not omit any for the sake of brevity.
+- Refrain from adding comments to the JSON text response.
+- For numbers, avoid using comma-separated values. For example, convert `100,000.00` to `100000.00`.
+- For dates, adhere to the format 'YYYY-MM-DDTHH:mm:ss'. For example, use '1900-01-01T01:01:01'.
+- If the data for a field is uncertain, assign a `null` value to it.
+
+<ResponseFormatInstruction>
+{format_instructions}
+</ResponseFormatInstruction>
+
+<TextToExtract>
+{plain_text}
+</TextToExtract>
