@@ -1,2 +1,5 @@
 # boto3 => aws textract
 boto3>=1.26.79
+pillow
+pandas
+python-dotenv
