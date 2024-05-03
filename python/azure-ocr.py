@@ -138,33 +138,8 @@ def azure_extracttext(image_data: str | bytes, use_extract_table=False):
     }
 
 
-# def azure_ocr_without_table(image_data: str | bytes):
-#     if type(image_data) == str:
-#         image_data = base64.b64decode(image_data)
-
-#     AZURE_OCR_URL = AZURE_VISION_ENDPOINT + "/computervision/imageanalysis:analyze"
-#     params = {
-#         "features": "read",
-#         "model-version": "latest",
-#         "gender-neutral-caption": "false",
-#         "api-version": "2023-10-01",
-#         "detect-orientation": "true",
-#     }
-
-#     # Set Content-Type to octet-stream
-#     headers = {"ocp-apim-subscription-key": AZURE_VISION_KEY, "Content-Type": "application/octet-stream"}
-
-#     # put the byte array into your post request
-#     response = requests.post(AZURE_OCR_URL, headers=headers, params=params, data=image_data)
-#     if response.status_code == 200:
-#         response_json: dict = response.json()
-#         result_data = get_azure_textannotations_formatedtext(response_json)
-
-#         return result_data
-
-
 if __name__ == "__main__":
-    image_bin = open(os.path.join("images", "test-1.png"), "rb").read()
+    image_bin = open(os.path.join("images", "test-5.png"), "rb").read()
     width, height = Image.open(io.BytesIO(image_bin)).size
 
     # without table
