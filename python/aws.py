@@ -222,7 +222,7 @@ def aws_textract_image(image_data, use_extract_table=False):
 # With table AWS_TABLE 15 / 1000
 
 if __name__ == "__main__":
-    image_bin = open(os.path.join("images", "test-4.png"), "rb").read()
+    image_bin = open(os.path.join("images", "test-1.png"), "rb").read()
     width, height = Image.open(io.BytesIO(image_bin)).size
 
     # without table
