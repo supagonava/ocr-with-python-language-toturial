@@ -3,3 +3,10 @@ boto3>=1.26.79
 pillow
 pandas
 python-dotenv
+requests
+azure-storage-blob
+azure-identity
+azure-ai-formrecognizer
+azure-ai-textanalytics
+azure-common
+azure-core
